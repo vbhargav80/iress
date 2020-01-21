@@ -1,0 +1,43 @@
+{
+  "name": "iress-coding-exercise",
+  "version": "1.0.0",
+  "main": "dist/toyRobotApp.js",
+  "description": "A simple starter workspace for TypeScript Development with Visual Studio code",
+  "jest": {
+    "mapCoverage": true,
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "notify": true,
+    "rootDir": "tests/",
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --coverage",
+    "watch": "tsc --watch",
+    "start": "node dist/toyRobotApp.js",
+    "clean": "rimraf dist/",
+    "prettier": "prettier --write \"{src}/**/*.{js,jsx,ts,tsx}\""
+  },
+  "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.11.0",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.1.8",
+    "lodash": "^4.17.15",
+    "readline": "^1.3.0",
+    "tslint": "^5.7.0"
+  }
+}
